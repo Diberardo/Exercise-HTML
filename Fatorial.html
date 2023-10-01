@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Fatorial</title>
+    <script>
+        function calculoFatorial()
+        {
+            var numero = parseInt(number.value)
+            var fatorial = 1;
+            
+            for (var i = 1; i <= numero;i++)
+            {
+                fatorial*=i;
+            }
+            result.innerHTML = fatorial;
+        }
+    </script>
+    </head>
+    <body>
+        <h1>Cálculo de Fatorial</h1>
+
+        <p>Digite um número inteiro:</p>
+        <input type="text"id="number">
+        <button onclick="calculoFatorial()">Calcular Fatorial</button>
+
+        <p id="result"></p>
+        
+</body>
+</html>

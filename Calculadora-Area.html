@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cáculo da área do retângulo ou quadrado</title>
+</head>
+<body>
+    <script>
+        function calcularArea(){
+            var x = parseFloat(v1.value);
+            var y = parseFloat(v2.value);
+            res1.value = x*y;
+            if (x == y){
+                mensagem.innerHTML = "Esse quadrilátero é um <b>QUADRADO.</b>";
+            } else {
+                mensagem.innerHTML = "Esse quadrilátero é um <b>RETÂNGULO.</b>";
+            }
+            
+        }
+    </script>
+    <h1> Vamos calcular a área do retângulo ou do quadrado?</h1>
+    Digite as medidas dos lados do quadrilátero nas caixas de texto a seguir: <br><br>
+    Altura (cm): <input type="text" id="v1" value="0" size="5"><br><br>
+    Largura (cm): <input type="text" id="v2" value="0" size="5"><br><br>
+    <input type="button" value="Calcular" onclick="calcularArea()"><br><br>
+    A área do triângulo é: <input type="text" id="res1" value="0" size="5" readonly> cm² <br>
+    <div id="mensagem"></div>
+
+</body>
+
+
+</html>

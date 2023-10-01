@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h1>Media dos Numeros Digitados </h1>
+    <input type="text" value="Numero 1" id="n1">
+    <input type="text" value="Numero 2" id="n2">
+    <input type="text" value="Numero 3" id="n3">
+    <input type="text" value="Numero 4" id="n4">
+    <input type="button" value="Media" onclick="Media()">
+    <div id="med"></div>
+    <script>
+        function Media()
+        {
+          med.innerHTML += '<h3>';
+          var N1 = parseFloat(n1.value);
+          var N2 = parseFloat(n2.value);
+          var N3 = parseFloat(n3.value);
+          var N4 = parseFloat(n4.value);
+          med.innerHTML = ( N1 + N2 + N3 + N4 ) / 4;
+        }
+    </script>
+</body>
+</html>
