@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Produtos</title>
+    <meta charset="UTF-8">
+    <script>
+        function carregar() 
+        {
+            var produtos = 
+            [
+                { codigo: 11, descricao: "Geladeira", preco: 2990.00 },
+                { codigo: 12, descricao: "Fogao", preco: 840.00 },
+                { codigo: 13, descricao: "Computador", preco: 3500.00 }
+            ];
+            res.innerHTML = "Produtos cadastrados:";
+            for (var i = 0; i < produtos.length; i++) 
+            {
+                res.innerHTML += "<br><br>Código: " + produtos[i].codigo +
+                    "<br>Descrição: " + produtos[i].descricao +
+                    "<br>Preço: " + produtos[i].preco;
+            }
+        }
+    </script>
+</head>
+
+<body onload="carregar()">
+    <h2>Produtos</h2>
+    <div id="res"></div>
+</body>
+
+</html>

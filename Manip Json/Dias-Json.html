@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Produtos</title>
+    <meta charset="UTF-8">
+    <script>
+        function hoje() 
+        {
+            var agora = new Date();
+            return (agora.getDate() + "/" +
+                (agora.getMonth() + 1) + "/" +
+                agora.getFullYear());
+        }
+        function carregar() 
+        {
+            var produto = 
+            {
+                codigo: 10,
+                descricao: "Televisor",
+                preco: 1990.00,
+                data: function () { return hoje(); }
+            };
+            res.innerHTML = "Dados do produto: " +
+                "<br>Código: " + produto.codigo +
+                "<br>Descrição: " + produto.descricao +
+                "<br>Preço: " + produto.preco +
+                "<br>Data do cadastro: " + produto.data();
+        }
+    </script>
+</head>
+
+<body onload="carregar()">
+    <h2>Produtos</h2>
+    <div id="res"></div>
+</body>
+
+</html>
