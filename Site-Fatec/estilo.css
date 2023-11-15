@@ -1,0 +1,35 @@
+.jumbotron 
+{
+    background-image: url("./img/Fundo.jpg");
+}
+.img-fluid
+{
+    width: 230px;
+    padding: 10px 20px 25px 7px;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+#center
+{
+    text-align: center;
+}
+.custom-button 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4CAF50; /* Cor de fundo verde, você pode ajustar conforme necessário */
+    color: #ffffff; /* Cor do texto branco, você pode ajustar conforme necessário */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #4CAF50; /* Borda do botão */
+    cursor: pointer;
+}
+.imgs
+{
+    width: 300px;
+}
+.container
+{
+   text-align: justify;
+}
